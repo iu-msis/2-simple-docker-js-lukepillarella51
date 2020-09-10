@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Table of Books</title>
+  </head>
+  <body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="index.html">On-The-Line Books</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="userinfo.html">User Information</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="table.html">Table of Books</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+    <h1>List of Books We Have</h1>
+
+    <table id="bookTable" class="table">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Author(s)</th>
+          <th>Year Published</th>
+          <th>Publisher</th>
+          <th>Page Count</th>
+          <th>MSRP</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>The Age of Cryptocurrency</td>
+          <td>Paul Vigna, Michael Casey</td>
+          <td>2015</td>
+          <td>Picador</td>
+          <td>357 pages</td>
+          <td>$15.65</td>
+        </tr>
+        <tr>
+          <td>Options Pricing and Volatility</td>
+          <td>Sheldon Natenberg</td>
+          <td>1988</td>
+          <td>McGraw Hill Professional</td>
+          <td>592 pages</td>
+          <td>$76.59</td>
+        </tr>
+        <tr>
+          <td>The Return of Depression Economicsy</td>
+          <td>Paul Krugman</td>
+          <td>2008</td>
+          <td>W. W. Norton & Company</td>
+          <td>214 pages</td>
+          <td>$14.50</td>
+        </tr>
+        <tr>
+          <td>The Subtle Art of Not Giving a F*ck</td>
+          <td>Mark Manson</td>
+          <td>2016</td>
+          <td>HarperOne</td>
+          <td>224 pages</td>
+          <td>$15.89</td>
+        </tr>
+        <tr>
+          <td>Think Big, Act Small</td>
+          <td>Jason Jennings</td>
+          <td>2005</td>
+          <td>Penguin Publishing Group</td>
+          <td>288 pages</td>
+          <td>$13.70</td>
+        </tr>
+        <tr>
+          <td>Why Nations Fail</td>
+          <td>Daron Acemoglu, James A. Robinson</td>
+          <td>2012</td>
+          <td>Crown Publishing Group</td>
+          <td>546 pages</td>
+          <td>$14.50</td>
+        </tr>
+        <tr>
+          <td>The Truth Machine: The Blockchain and The Future of Everything</td>
+          <td>Paul Vigna, Michael Casey</td>
+          <td>2018</td>
+          <td>St. Martin's Publishing Group</td>
+          <td>352 pages</td>
+          <td>$17.32</td>
+        </tr>
+        <tr>
+          <td>Too Big to Fail</td>
+          <td>Andrew Ross Sorkin</td>
+          <td>2009</td>
+          <td>Viking Press</td>
+          <td>624 pages</td>
+          <td>$27.89</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <br>
+    <div class="container">
+      <form role="form">
+        <h3>Feel Free to Add a Book to your Prferences</h3>
+        <br>
+          <div class="form-group">
+              <label for="title">Book Title</label>
+              <input type="text" id="title" class="form-control" name="title" placeholder="Book Title"><br>
+          </div>
+          <div class="form-group">
+            <label for="author">Author(s)</label>
+            <input type="text" id="author" name="author" class="form-control" placeholder="Author(s)"><br>
+          </div>
+          <div class="form-group">
+            <label for="year_published">Year Published</label>
+            <input type="text" id="year_published" class="form-control" name="year_published"><br>
+          </div>
+          <div class="form-group">
+            <label for="publisher">Publisher</label>
+            <input type="text" id="publisher" class="form-control" name="publisher"><br>
+          </div>
+          <div class="form-group">
+            <label for="pages">Number of Pages</label>
+            <input type="number" id="pages" class="form-control" name="pages"><br>
+          </div>
+          <div class="form-group">
+            <label for="msrp">Suggested Retail Price</label>
+            <input type="number" min="0.01" step="0.01" max="2500" id="msrp" class="form-control" name="msrp"><br>
+          </div>
+        <button type="submit" form="book_form" value="Submit" class="btn btn-primary">Add Book to List</button>
+      </form>
+    </div>
+
+
+
+    <footer>
+      <p>On-The-Line Books</p>
+      <p>12345 Bookslane Dr Bloomington, IN 47404</p>
+      <p><a id="storeemail" href="mailto:otlbooks@gmail.com">otlbooks@gmail.com</a></p>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="js/tablesort.min.js"></script>
+    <script>
+    /**Tablesort plugin from http://tristen.ca/tablesort/demo/**/
+    
+  new Tablesort(document.getElementById('bookTable'));
+</script>
+  </body>
+</html>
