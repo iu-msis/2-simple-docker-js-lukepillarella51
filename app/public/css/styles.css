@@ -1,0 +1,117 @@
+img {
+    float: center;
+    width:  200px;
+    height: 200px;
+    object-fit: scale-down;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+cite{
+  font-style: italic;
+}
+
+.image1,.image2,.image3,.image4,.image5 {
+  text-align: center;
+  width: 200px;
+}
+
+.image1,.image2,.image3,.image4,.image5, img{
+  display: block;
+  margin: 0 auto;
+}
+
+.citations{
+  text-align: center;
+  padding: 10px;
+  word-spacing: 5px;
+}
+
+#storeemail, #useremail {
+  color: white;
+}
+
+.card{
+  background-color:#7e9a9a;
+}
+
+.user {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-left:auto;
+  margin-right:auto;
+  object-fit: cover;
+
+}
+
+.card{
+  text-align: center;
+}
+
+h1,h2,h3{
+  text-align: center;
+}
+
+h1{
+  background-color:DarkSalmon;
+}
+
+form{
+  padding-top:10px;
+  padding-bottom:10px;
+  text-align: center;
+  background-color:#7e9a9a;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: DarkSalmon;
+  color: black;
+}
+
+.btn-primary{
+  background-color: grey;
+}
+
+.btn:hover{
+  background-color: black;
+}
+
+/** Tablesort css **/
+
+th[role=columnheader]:not(.no-sort) {
+	cursor: pointer;
+}
+
+th[role=columnheader]:not(.no-sort):after {
+	content: '';
+	float: right;
+	margin-top: 7px;
+	border-width: 0 4px 4px;
+	border-style: solid;
+	border-color: #404040 transparent;
+	visibility: hidden;
+	opacity: 0;
+	-ms-user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+}
+
+th[aria-sort=ascending]:not(.no-sort):after {
+	border-bottom: none;
+	border-width: 4px 4px 0;
+}
+
+th[aria-sort]:not(.no-sort):after {
+	visibility: visible;
+	opacity: 0.4;
+}
+
+th[role=columnheader]:not(.no-sort):hover:after {
+	visibility: visible;
+	opacity: 1;
+}
