@@ -27,8 +27,12 @@ cite{
   word-spacing: 5px;
 }
 
-#storeemail, #useremail {
-  color: white;
+#storeemail, #userEmail {
+  color: black;
+}
+
+#storeemail:hover, #userEmail:hover {
+  color: blue;
 }
 
 .card{
@@ -37,8 +41,8 @@ cite{
 
 .user {
   display: inline-block;
-  width: 150px;
-  height: 150px;
+  width: Auto;
+  height: auto;
   border-radius: 50%;
   margin-left:auto;
   margin-right:auto;
