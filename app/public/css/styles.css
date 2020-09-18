@@ -41,7 +41,7 @@ cite{
 
 .user {
   display: inline-block;
-  width: Auto;
+  width: auto;
   height: auto;
   border-radius: 50%;
   margin-left:auto;
