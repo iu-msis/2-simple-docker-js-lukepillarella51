@@ -37,6 +37,7 @@
   <div id="app" class="card">
 
     <h1>View Your Profile</h1>
+    <form v-on:submit.prevent="handleGetUser">
     <a v-bind:href="userImgLarge">
       <img v-bind:src="userImgThumb" class="user">
     </a>
@@ -44,8 +45,9 @@
       <p class="country">{{ userCountry }}</p>
       <p class="birthdate">{{ formatDate(userDOB) }}</p>
       <p class="age">Age {{ userAge }}</p>
-      <a id="useremail" v-bind:href="'mailto:' + userEmail"> {{ userEmail }} </a>
-
+      <a id="useremail" v-bind:href="'mailto:' + userEmail"> {{ userEmail }} </a><br>
+      <button class="btn btn-primary">Get New User</button>
+    </form>
       <!-- <p>{{ message }}</p>
       <button v-on:click="reverseMessage">Reverse Message</button> -->
 
