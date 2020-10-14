@@ -62,11 +62,18 @@ h1{
   background-color:DarkSalmon;
 }
 
-form{
-  padding-top:10px;
-  padding-bottom:10px;
+.table {
+    width: 50%;
+    margin-bottom: 1rem;
+    color: #212529;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+form {
   text-align: center;
-  background-color:#7e9a9a;
+  background-color: grey;
 }
 
 footer {
@@ -77,11 +84,14 @@ footer {
 }
 
 .btn-primary{
-  background-color: grey;
+  background-color: white;
+  color: black;
+  border-color: black;
 }
 
 .btn:hover{
   background-color: black;
+  border-color: white;
 }
 
 /** Tablesort css **/
@@ -93,7 +103,7 @@ th[role=columnheader]:not(.no-sort) {
 th[role=columnheader]:not(.no-sort):after {
 	content: '';
 	float: right;
-	margin-top: 7px;
+	margin-top: 5px;
 	border-width: 0 4px 4px;
 	border-style: solid;
 	border-color: #404040 transparent;

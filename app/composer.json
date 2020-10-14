@@ -1,0 +1,14 @@
+{
+    "name": "Data&Systems/2-simple=docker-js-lukepillarella51",
+    "description": "HW #7",
+    "license": "private",
+    "authors": [{
+        "name": "Luke Pillarella"
+    }],
+    "require": {
+      "ramsey/uuid": "^4.1"
+    },
+    "autoload": {
+        "classmap": ["class/DbConnection.php"]
+    }
+}
