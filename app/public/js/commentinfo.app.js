@@ -34,7 +34,7 @@ var commentInfo = new Vue({
       .then( json => {
         console.log("Returned from post:", json);
 
-        this.commentList.push(json[0]);
+        this.commentList = json;
         this.newCommentForm = this.newCommentData();
       });
 
