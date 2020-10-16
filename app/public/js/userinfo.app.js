@@ -57,6 +57,7 @@ var app = new Vue({
 },
 
   created(){
+
     this.handleGetUser();
   }
 })
