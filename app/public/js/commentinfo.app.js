@@ -22,7 +22,7 @@ var commentInfo = new Vue({
       });
     },
 
-    handleNewCommentForm( evt ) {
+    creatNewComment() {
       fetch('api/comments/create.php', {
         method:'POST',
         body: JSON.stringify(this.newCommentForm),
@@ -43,6 +43,7 @@ var commentInfo = new Vue({
     },
     newCommentData() {
       return {
+        id:'',
         commentText:''
       }
     }
